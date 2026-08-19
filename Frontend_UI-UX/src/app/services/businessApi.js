@@ -4,11 +4,11 @@
 // Notifications / Export / Trainer Analytics / Certification.
 //
 // Business Logic service:
-//   Development: http://127.0.0.1:8002
+//   Development: https://ai-signlanguage-backend-api-signlanguage-gagi.onrender.com
 //   Production: VITE_BUSINESS_API_URL
 //
 // Backend API:
-//   Development: http://127.0.0.1:8000
+//   Development: https://ai-signlanguage-backend-api-signlanguage-gagi.onrender.com
 //
 // IMPORTANT ROLE:
 //   trainer
