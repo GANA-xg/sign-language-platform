@@ -11,3 +11,4 @@ psycopg2-binary
 slowapi
 email-validator
 httpx
+python-multipart
