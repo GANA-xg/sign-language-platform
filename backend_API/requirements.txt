@@ -9,3 +9,5 @@ sqlalchemy
 python-dotenv
 psycopg2-binary
 slowapi
+email-validator
+httpx
