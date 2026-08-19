@@ -31,11 +31,11 @@
 
 const BUSINESS_BASE_URL =
   import.meta.env.VITE_BUSINESS_API_URL ??
-  "http://127.0.0.1:8002";
+  "https://ai-signlanguage-backend-api-signlanguage-gagi.onrender.com";
 
 const BACKEND_BASE_URL =
   import.meta.env.VITE_API_URL ??
-  "http://127.0.0.1:8000";
+  "https://ai-signlanguage-backend-api-signlanguage-gagi.onrender.com";
 
 export const BUSINESS_USE_MOCKS = false;
 

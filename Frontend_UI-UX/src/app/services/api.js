@@ -9,7 +9,7 @@
 // Frontend roles use the exact same values.
 // There is NO "accessibility_trainer" role.
 
-const BASE_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
+const BASE_URL = import.meta.env.VITE_API_URL ?? "https://ai-signlanguage-backend-api-signlanguage-gagi.onrender.com";
 export const USE_MOCKS = false;
 
 function getToken() {

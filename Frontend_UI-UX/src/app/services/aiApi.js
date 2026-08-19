@@ -20,7 +20,7 @@
 //
 // M4 Day 5: AI_BASE_URL reads from VITE_AI_API_URL env var for production.
 
-const AI_BASE_URL = import.meta.env.VITE_AI_API_URL ?? "http://127.0.0.1:8001";
+const AI_BASE_URL = import.meta.env.VITE_AI_API_URL ?? "https://ai-signlanguage-platform-si7-team-one-58ie.onrender.com";
 export const AI_USE_MOCKS = false;
 
 const delay = (v) => new Promise((r) => setTimeout(() => r(v), 400));
