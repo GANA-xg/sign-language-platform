@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import {
   Camera, ArrowRight, AlertTriangle, Loader2,
 } from "lucide-react";
-import type { Screen } from "../utils/types";
+import type { Screen } from "@/app/utils/types";
 import { HandOverlay } from "../components/shared/HandOverlay";
 import { Bdg } from "../components/shared/Indicators";
 import { useAuth } from "../context/AuthContext";

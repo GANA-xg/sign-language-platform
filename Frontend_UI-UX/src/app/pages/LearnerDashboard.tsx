@@ -3,7 +3,7 @@ import {
   BookOpen, Camera, CheckSquare, Clock, Zap, Target,
   ArrowRight, Lock, Award,
 } from "lucide-react";
-import type { Screen } from "../utils/types";
+import type { Screen } from "@/app/utils/types";
 import { MCard } from "../components/shared/MCard";
 import { Bdg, PBar, Ring } from "../components/shared/Indicators";
 import { getDashboard } from "../services/aiApi";

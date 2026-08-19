@@ -30,7 +30,7 @@ import {
   downloadCertificationCertificate,
 } from "../services/businessApi";
 import { startPracticeSession, submitPracticeAttempt } from "../services/businessApi";
-import type { Screen } from "../utils/types";
+import type { Screen } from "@/app/utils/types";
 
 // ── Types ────────────────────────────────────────────────────────────────────
 

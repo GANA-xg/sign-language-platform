@@ -10,7 +10,7 @@ import {
   Users,
   TrendingUp,
 } from "lucide-react";
-import type { Screen } from "../utils/types";
+import type { Screen } from "@/app/utils/types";
 import { MCard } from "../components/shared/MCard";
 import { assignStudent, getMyStudents } from "../services/api";
 

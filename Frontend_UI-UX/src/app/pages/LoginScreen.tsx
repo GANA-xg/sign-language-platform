@@ -5,7 +5,7 @@ import {
   Lock,
   Mail,
 } from "lucide-react";
-import type { Role } from "../utils/types";
+import type { Role } from "@/app/utils/types";
 import { loginUser, USE_MOCKS } from "../services/api";
 import LoginDoodles from "../components/shared/LoginDoodles";
 

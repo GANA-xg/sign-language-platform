@@ -5,7 +5,7 @@ import {
 } from "react-router";
 
 import { useAuth } from "../context/AuthContext";
-import type { Role } from "../utils/types";
+import type { Role } from "@/app/utils/types";
 
 const ROLE_HOME: Record<Role, string> = {
   learner: "/dashboard",

@@ -8,7 +8,7 @@ import {
   getFeedback,
 } from "../services/businessApi";
 import { getProfile } from "../services/api";
-import type { Screen } from "../utils/types";
+import type { Screen } from "@/app/utils/types";
 
 type EligibilityData = {
   eligible: boolean;

@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
-import type { Role } from "../utils/types";
+import type { Role } from "@/app/utils/types";
 import { logoutUser } from "../services/api";
 
 const BASE_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";

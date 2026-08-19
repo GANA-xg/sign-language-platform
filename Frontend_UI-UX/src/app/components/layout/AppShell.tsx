@@ -3,8 +3,8 @@ import { Outlet, useLocation, useNavigate } from "react-router";
 import { Sidebar } from "./Sidebar";
 import { TopBar } from "./TopBar";
 import { useAuth } from "../../context/AuthContext";
-import { SCREEN_PATH, PATH_SCREEN } from "../utils/nav";
-import type { Screen } from "../../utils/types";
+import { SCREEN_PATH, PATH_SCREEN } from "@/app/utils/nav";
+import type { Screen } from "@/app/utils/types";
 
 export function AppShell() {
   const { role, logout } = useAuth();

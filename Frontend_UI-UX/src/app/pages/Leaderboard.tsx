@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Trophy, Flame, ArrowUpRight, Medal, Crown, Sparkles } from "lucide-react";
-import type { Screen } from "../utils/types";
+import type { Screen } from "@/app/utils/types";
 import { MCard } from "../components/shared/MCard";
 import { Bdg } from "../components/shared/Indicators";
 import { useAuth } from "../context/AuthContext";

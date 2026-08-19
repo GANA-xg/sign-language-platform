@@ -8,7 +8,7 @@ import {
 } from "recharts";
 import { MCard } from "../components/shared/MCard";
 import { Bdg } from "../components/shared/Indicators";
-import { useIsDark } from "../utils/useIsDark";
+import { useIsDark } from "@/app/utils/useIsDark";
 import {
   adminListUsers,
   adminToggleUserStatus,

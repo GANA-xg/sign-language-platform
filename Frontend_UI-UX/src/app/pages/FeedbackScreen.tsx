@@ -7,7 +7,7 @@ import {
   Download, Share2, AlertTriangle, CheckCircle, XCircle, Info,
   SkipForward, Calendar, Lock, Mail, Check, ChevronLeft,
 } from "lucide-react";
-import type { Screen } from "../utils/types";
+import type { Screen } from "@/app/utils/types";
 import { HandOverlay } from "../components/shared/HandOverlay";
 import { Bdg, Ring } from "../components/shared/Indicators";
 import { FlowStepper } from "../components/shared/FlowStepper";

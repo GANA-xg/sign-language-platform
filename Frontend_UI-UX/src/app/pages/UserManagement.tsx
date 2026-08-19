@@ -4,7 +4,7 @@ import {
 } from "lucide-react";
 import { Bdg } from "../components/shared/Indicators";
 import { adminListUsers, adminToggleUserStatus, adminChangeUserRole } from "../services/api";
-import type { Role } from "../utils/types";
+import type { Role } from "@/app/utils/types";
 
 interface BackendUser {
   user_id: string;
