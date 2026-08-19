@@ -20,7 +20,7 @@ import { AppShell } from "./components/layout/AppShell";
 import type {
   Screen,
   Role,
-} from "./lib/types";
+} from ".[^a-zA-Z]utils/types";
 
 import Leaderboard from "./pages/Leaderboard";
 import LoginScreen from "./pages/LoginScreen";

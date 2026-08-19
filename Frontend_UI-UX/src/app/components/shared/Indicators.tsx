@@ -1,4 +1,4 @@
-import type { BadgeVariant } from "../../lib/types";
+import type { BadgeVariant } from "../../utils/types";
 
 export function Bdg({ label, v = "default" }: { label: string; v?: BadgeVariant }) {
   const cls: Record<BadgeVariant, string> = {

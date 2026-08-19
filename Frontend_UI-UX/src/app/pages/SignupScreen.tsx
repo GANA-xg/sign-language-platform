@@ -7,7 +7,7 @@ import {
   Download, Share2, AlertTriangle, CheckCircle, XCircle, Info,
   SkipForward, Calendar, Lock, Mail, Check, ChevronLeft,
 } from "lucide-react";
-import type { Role } from "../lib/types";
+import type { Role } from "../utils/types";
 import { registerUser, loginUser } from "../services/api";
 
 export default function SignupScreen({

@@ -7,7 +7,7 @@ import {
   Download, Share2, AlertTriangle, CheckCircle, XCircle, Info,
   SkipForward, Calendar, Lock, Mail, Check, ChevronLeft,
 } from "lucide-react";
-import type { Screen } from "../lib/types";
+import type { Screen } from "../utils/types";
 
 export default function CameraPermissionScreen({ go }: { go: (s: Screen) => void }) {
   return (

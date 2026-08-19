@@ -7,7 +7,7 @@ import {
   Download, Share2, AlertTriangle, CheckCircle, XCircle, Info,
   SkipForward, Calendar, Lock, Mail, Check, ChevronLeft, RefreshCw,
 } from "lucide-react";
-import type { Screen } from "../lib/types";
+import type { Screen } from "../utils/types";
 import { Bdg, PBar } from "../components/shared/Indicators";
 import { getCourses } from "../services/api";
 

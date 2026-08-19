@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { LANDMARKS, CONNECTIONS } from "../../lib/mockData";
+import { LANDMARKS, CONNECTIONS } from "../../utils/mockData";
 
 export function HandOverlay({
   w = 300, h = 380, animated = true,

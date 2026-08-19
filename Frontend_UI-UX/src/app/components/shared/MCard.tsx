@@ -1,4 +1,4 @@
-import type { MColor } from "../../lib/types";
+import type { MColor } from "../../utils/types";
 
 const MCLS: Record<MColor, string> = {
   cyan:    "text-info bg-info/10",

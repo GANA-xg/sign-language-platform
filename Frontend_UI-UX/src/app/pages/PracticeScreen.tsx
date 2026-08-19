@@ -8,7 +8,7 @@ import {
   SkipForward, Calendar, Lock, Mail, Check, ChevronLeft, Loader2,
   Hand,
 } from "lucide-react";
-import type { Screen } from "../lib/types";
+import type { Screen } from "../utils/types";
 import { HandOverlay } from "../components/shared/HandOverlay";
 import { FlowStepper } from "../components/shared/FlowStepper";
 import { useAuth } from "../context/AuthContext";

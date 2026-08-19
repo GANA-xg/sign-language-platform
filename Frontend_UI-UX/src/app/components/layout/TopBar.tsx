@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { LogOut, Menu, Bell, Award, MessageCircle, Info } from "lucide-react";
-import type { Role, Screen } from "../../lib/types";
-import { SCREEN_LABELS, ROLE_CLS } from "../../lib/nav";
+import type { Role, Screen } from "../../utils/types";
+import { SCREEN_LABELS, ROLE_CLS } from "../../utils/nav";
 import { useAuth } from "../../context/AuthContext";
 import { getNotifications, markNotificationsRead } from "../../services/businessApi";
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Bell, Settings } from "lucide-react";
-import type { Role, Screen } from "../../lib/types";
-import { NAV } from "../../lib/nav";
+import type { Role, Screen } from "../../utils/types";
+import { NAV } from "../../utils/nav";
 import { useAuth } from "../../context/AuthContext";
 import { getNotifications } from "../../services/businessApi";
 export function Sidebar({

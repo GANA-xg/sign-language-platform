@@ -4,7 +4,7 @@ import { Sidebar } from "./Sidebar";
 import { TopBar } from "./TopBar";
 import { useAuth } from "../../context/AuthContext";
 import { SCREEN_PATH, PATH_SCREEN } from "../utils/nav";
-import type { Screen } from "../../lib/types";
+import type { Screen } from "../../utils/types";
 
 export function AppShell() {
   const { role, logout } = useAuth();
