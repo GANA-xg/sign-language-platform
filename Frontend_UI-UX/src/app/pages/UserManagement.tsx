@@ -47,7 +47,7 @@ export default function UserManagement() {
     setError(null);
     adminListUsers()
       .then(data => setUsers(data ?? []))
-      .catch(() => setError("Couldn't load users. Is the backend running on port 8000?"))
+      .catch(() => setError("Couldn't load users. The backend is unreachable."))
       .finally(() => setLoading(false));
   };
 

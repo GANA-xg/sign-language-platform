@@ -5,7 +5,7 @@
  *   4 levels: Beginner / Intermediate / Advanced / Professional
  *   Flow: pick level → webcam attempt per sign → pass/fail result → PDF certificate
  *
- * Wired to real Business Logic service (port 8002) via:
+ * Wired to real Business Logic service via:
  *   getCertificationLevels, startCertificationExam, recordCertificationAttempt,
  *   completeCertificationExam, downloadCertificationCertificate
  *   (all confirmed from certification.py + schemas/certification.py)
@@ -108,7 +108,7 @@ export default function CertificationExam({ go }: { go: (s: Screen) => void }) {
   useEffect(() => {
     getCertificationLevels()
       .then(setLevels)
-      .catch(() => setError("Couldn't load certification levels. Is the Business Logic service running on port 8002?"));
+      .catch(() => setError("Couldn't load certification levels. The Business Logic service is unreachable."));
   }, []);
 
   // Start webcam when entering capturing phase

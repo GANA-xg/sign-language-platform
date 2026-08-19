@@ -57,7 +57,7 @@ export default function AssessmentScreen({ go }: { go: (s: Screen) => void }) {
           setSessionId(session.session_id);
           localStorage.setItem("current_session_id", session.session_id);
         })
-        .catch(() => setSessionError("Couldn't start a session. Is the Business Logic service running on port 8002?"));
+        .catch(() => setSessionError("Couldn't start a session. The Business Logic service is unreachable."));
     }
     holdStartedAt.current = new Date().toISOString();
 

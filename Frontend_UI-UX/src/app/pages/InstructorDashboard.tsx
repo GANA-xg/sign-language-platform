@@ -42,7 +42,7 @@ export default function InstructorDashboard({
       const data = await getMyStudents();
       setStudents(data ?? []);
     } catch {
-      setError("Couldn't load students. Is the backend running on port 8000?");
+      setError("Couldn't load students. The backend is unreachable.");
     } finally {
       setLoading(false);
     }

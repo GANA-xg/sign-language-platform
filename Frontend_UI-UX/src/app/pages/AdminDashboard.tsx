@@ -14,8 +14,8 @@ import {
   adminToggleUserStatus,
 } from "../services/api";
 
-const BUSINESS_BASE_URL = import.meta.env.VITE_BUSINESS_API_URL ?? "http://127.0.0.1:8002";
-const AI_BASE_URL = import.meta.env.VITE_AI_API_URL ?? "http://127.0.0.1:8001";
+const BUSINESS_BASE_URL = import.meta.env.VITE_BUSINESS_API_URL ?? "https://ai-signlanguage-backend-api-signlanguage-gagi.onrender.com";
+const AI_BASE_URL = import.meta.env.VITE_AI_API_URL ?? "https://ai-signlanguage-platform-si7-team-one-58ie.onrender.com";
 
 interface BackendUser {
   user_id: string;
@@ -65,7 +65,7 @@ export default function AdminDashboard() {
       };
 
       await Promise.all([
-        check("Backend API", "http://localhost:8000/health", "—"),
+        check("Backend API", "https://ai-signlanguage-backend-api-signlanguage-gagi.onrender.com/health", "—"),
         check("Business Logic", `${BUSINESS_BASE_URL}/health`, "—"),
         check("AI/ML Service", `${AI_BASE_URL}/health`, "—"),
       ]);

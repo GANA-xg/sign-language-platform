@@ -1,5 +1,5 @@
 // AI/CV service client — talks directly to Intern 3's standalone
-// FastAPI service (port 8001). Confirmed against real api.py (2026-08-16).
+// FastAPI service (production). Confirmed against real api.py (2026-08-16).
 //
 // Endpoints:
 //   GET  /            — health check

@@ -45,7 +45,7 @@ export default function FeedbackScreen({ go }: { go: (s: Screen) => void }) {
         setItems(fb.feedback ?? []);
         if (assess) setAssessment(assess);
       })
-      .catch(() => setError("Couldn't generate feedback. Is the Business Logic service running on port 8002?"))
+      .catch(() => setError("Couldn't generate feedback. The Business Logic service is unreachable."))
       .finally(() => setLoading(false));
   }, []);
 

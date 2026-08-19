@@ -164,7 +164,7 @@ export default function PracticeScreen({ go }: { go: (s: Screen) => void }) {
         localStorage.setItem("current_session_id", session.session_id);
         localStorage.setItem("current_expected_sign", sign);
       })
-      .catch(() => setSessionError("Couldn't start a practice session. Is the Business Logic service running on port 8002?"));
+      .catch(() => setSessionError("Couldn't start a practice session. The Business Logic service is unreachable."));
     holdStartedAt.current = new Date().toISOString();
   }, []);
 

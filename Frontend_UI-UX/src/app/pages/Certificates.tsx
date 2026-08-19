@@ -44,7 +44,7 @@ export default function Certificates({ go }: { go: (s: Screen) => void }) {
     const fetchAll = async () => {
       setLoading(true);
 
-      // Profile — main backend (port 8000). Fail silently, fall back to role name.
+      // Profile — main backend. Fail silently, fall back to role name.
       try {
         const profile = await getProfile();
         setLearnerName(profile.full_name ?? role);
@@ -52,7 +52,7 @@ export default function Certificates({ go }: { go: (s: Screen) => void }) {
         setLearnerName(role);
       }
 
-      // Certificate eligibility + recommendations — business logic (port 8002).
+      // Certificate eligibility + recommendations — business logic.
       try {
         const [elig, recs] = await Promise.all([
           getCertificateEligibility(uid),
@@ -61,7 +61,7 @@ export default function Certificates({ go }: { go: (s: Screen) => void }) {
         setEligibility(elig);
         setRecommendations(recs.recommendations ?? []);
       } catch (e) {
-        setError("Couldn't load certificate data. Is the Business Logic service running on port 8002?");
+        setError("Couldn't load certificate data. The Business Logic service is unreachable.");
         setLoading(false);
         return;
       }

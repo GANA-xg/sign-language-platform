@@ -128,7 +128,7 @@ export default function ProgressAnalytics() {
       a.click();
       URL.revokeObjectURL(url);
     } catch {
-      alert(`Couldn't download ${type} report. Is the Business Logic service running on port 8002?`);
+      alert(`Couldn't download ${type} report. The Business Logic service is unreachable.`);
     } finally {
       setReportLoading(null);
     }
@@ -154,7 +154,7 @@ export default function ProgressAnalytics() {
       {!loading && error && (
         <div className="flex flex-col items-center gap-3 py-16 text-center">
           <AlertTriangle size={28} className="text-rose-400" />
-          <p className="text-sm text-muted-foreground">Couldn't load your progress data. Is the Business Logic service running on port 8002?</p>
+          <p className="text-sm text-muted-foreground">Couldn't load your progress data. The Business Logic service is unreachable.</p>
         </div>
       )}
 

@@ -189,7 +189,7 @@ export default function LearnerDashboard({ go }: { go: (s: Screen) => void }) {
           </div>
           {loadingGamification && <div className="h-40 bg-muted rounded-lg animate-pulse" />}
           {!loadingGamification && !gamification && (
-            <p className="text-xs text-muted-foreground">Couldn't load badges/streak data — is the Business Logic service running on port 8002?</p>
+            <p className="text-xs text-muted-foreground">Couldn't load badges/streak data — is the Business Logic service running?</p>
           )}
           {!loadingGamification && gamification && (
             <>

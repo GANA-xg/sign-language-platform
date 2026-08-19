@@ -4,7 +4,7 @@ import { Bdg } from "../components/shared/Indicators";
 import { useAuth } from "../context/AuthContext";
 import { getTrainerDashboard } from "../services/businessApi";
 
-const BUSINESS_BASE_URL = import.meta.env.VITE_BUSINESS_API_URL ?? "http://127.0.0.1:8002";
+const BUSINESS_BASE_URL = import.meta.env.VITE_BUSINESS_API_URL ?? "https://ai-signlanguage-backend-api-signlanguage-gagi.onrender.com";
 
 interface LearnerCase {
   learner_id: string;

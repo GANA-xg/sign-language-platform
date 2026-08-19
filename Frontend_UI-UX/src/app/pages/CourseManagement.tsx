@@ -65,7 +65,7 @@ export default function CourseManagement() {
     getCourses()
       .then((data) => setCourses(data ?? []))
       .catch(() =>
-        setError("Couldn't load courses. Is the Backend API running on port 8000?")
+        setError("Couldn't load courses. The backend is unreachable.")
       )
       .finally(() => setLoading(false));
   };

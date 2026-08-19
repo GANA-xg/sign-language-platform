@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect, type ReactNode } from "
 import type { Role } from "@/app/utils/types";
 import { logoutUser } from "../services/api";
 
-const BASE_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
+const BASE_URL = import.meta.env.VITE_API_URL ?? "https://ai-signlanguage-backend-api-signlanguage-gagi.onrender.com";
 
 interface AuthState {
   isAuthenticated: boolean;

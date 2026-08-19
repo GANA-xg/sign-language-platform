@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Users, BookOpen, Camera, CheckSquare, MessageCircle, TrendingUp, RefreshCw, Server } from "lucide-react";
 
-const BUSINESS_BASE_URL = import.meta.env.VITE_BUSINESS_API_URL ?? "http://127.0.0.1:8002";
-const AI_BASE_URL = import.meta.env.VITE_AI_API_URL ?? "http://127.0.0.1:8001";
-const BACKEND_BASE_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
+const BUSINESS_BASE_URL = import.meta.env.VITE_BUSINESS_API_URL ?? "https://ai-signlanguage-backend-api-signlanguage-gagi.onrender.com";
+const AI_BASE_URL = import.meta.env.VITE_AI_API_URL ?? "https://ai-signlanguage-platform-si7-team-one-58ie.onrender.com";
+const BACKEND_BASE_URL = import.meta.env.VITE_API_URL ?? "https://ai-signlanguage-backend-api-signlanguage-gagi.onrender.com";
 
 interface ServiceHealth {
   name: string;

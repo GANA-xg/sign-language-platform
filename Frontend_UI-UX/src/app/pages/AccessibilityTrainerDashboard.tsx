@@ -39,7 +39,7 @@ type LearnerAnalytics = {
 function normalizeLearner(l: LearnerAnalytics): TraineeRow {
   return {
     // Backend only returns learner_id (UUID), not a display name yet — real
-    // names need a lookup against Intern 2's user data (port 8000), not
+    // names need a lookup against Intern 2's user data, not
     // wired here. Using a shortened UUID as a placeholder for now.
     name: l.learner_id.slice(0, 8),
     engagement: l.engagement_level.toLowerCase() as TraineeRow["engagement"],
@@ -98,7 +98,7 @@ export default function AccessibilityTrainerDashboard({ go }: { go: (s: any) => 
           lowEngagementCount: data.low_engagement_count,
         });
       } catch (e) {
-        setError("Couldn't load trainer dashboard. Is the Business Logic service running on port 8002?");
+        setError("Couldn't load trainer dashboard. The Business Logic service is unreachable.");
       } finally {
         setLoading(false);
       }

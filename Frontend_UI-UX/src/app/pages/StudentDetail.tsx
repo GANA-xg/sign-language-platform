@@ -36,14 +36,14 @@ export default function StudentDetail() {
         setStudents(data ?? []);
         if (data && data.length > 0) setSelected(data[0]);
       })
-      .catch(() => setError("Couldn't load students. Is the Backend API running on port 8000?"))
+      .catch(() => setError("Couldn't load students. The backend is unreachable."))
       .finally(() => setLoading(false));
   }, []);
 
   useEffect(() => {
     if (!selected || !userId) return;
     setAnalyticsLoading(true);
-    fetch(`${import.meta.env.VITE_BUSINESS_API_URL ?? "http://127.0.0.1:8002"}/trainer/${userId}/learners/${selected.user_id}`, {
+    fetch(`${import.meta.env.VITE_BUSINESS_API_URL ?? "https://ai-signlanguage-backend-api-signlanguage-gagi.onrender.com"}/trainer/${userId}/learners/${selected.user_id}`, {
       headers: { Authorization: `Bearer ${localStorage.getItem("token") ?? ""}` },
     })
       .then((r) => r.ok ? r.json() : null)
