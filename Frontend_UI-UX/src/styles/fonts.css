@@ -1,0 +1,5 @@
+/* System fonts - SF Pro Display, SF Pro Text, and fallbacks */
+/* No external font imports needed - using Apple system fonts */
+
+/* Inter as fallback for non-Apple systems */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');

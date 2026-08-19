@@ -1,0 +1,241 @@
+/* notifications.css — Notification Bell styles for Milestone 3 */
+
+/* ── Wrapper ─────────────────────────────────────────────────────────────── */
+.notification-bell-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ── Bell Button ─────────────────────────────────────────────────────────── */
+.notification-bell-btn {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  color: var(--text-primary, #1a1a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
+}
+
+.notification-bell-btn:hover {
+  background: var(--surface-hover, rgba(0, 0, 0, 0.06));
+}
+
+.notification-bell-btn:focus-visible {
+  outline: 2px solid var(--color-primary, #ff385c);
+  outline-offset: 2px;
+}
+
+/* ── Unread Count Badge ──────────────────────────────────────────────────── */
+.notification-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: var(--color-primary, #ff385c);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  pointer-events: none;
+}
+
+/* ── Dropdown Panel ──────────────────────────────────────────────────────── */
+.notification-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 340px;
+  max-height: 420px;
+  background: var(--surface-card, #ffffff);
+  border: 1px solid var(--border-color, #e5e7eb);
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: notif-fade-in 0.15s ease;
+}
+
+@keyframes notif-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Dropdown Header ─────────────────────────────────────────────────────── */
+.notification-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid var(--border-color, #e5e7eb);
+  flex-shrink: 0;
+}
+
+.notification-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary, #1a1a1a);
+}
+
+.mark-all-read-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--color-primary, #ff385c);
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.mark-all-read-btn:hover {
+  background: rgba(255, 56, 92, 0.08);
+}
+
+.mark-all-read-btn:focus-visible {
+  outline: 2px solid var(--color-primary, #ff385c);
+  outline-offset: 2px;
+}
+
+/* ── Dropdown Body ───────────────────────────────────────────────────────── */
+.notification-body {
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* ── State messages (loading / error / empty) ────────────────────────────── */
+.notification-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 32px 16px;
+  color: var(--text-secondary, #6b7280);
+  font-size: 14px;
+  text-align: center;
+}
+
+.notification-error {
+  color: #dc2626;
+}
+
+.notification-empty p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary, #1a1a1a);
+}
+
+.notification-empty-sub {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: var(--text-secondary, #6b7280) !important;
+}
+
+.retry-btn {
+  margin-top: 4px;
+  background: none;
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.retry-btn:hover {
+  background: rgba(220, 38, 38, 0.06);
+}
+
+/* ── Notification Item ───────────────────────────────────────────────────── */
+.notification-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-color, #f3f4f6);
+  transition: background 0.12s;
+  position: relative;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-item:hover {
+  background: var(--surface-hover, rgba(0, 0, 0, 0.03));
+}
+
+.notification-item:focus-visible {
+  outline: 2px solid var(--color-primary, #ff385c);
+  outline-offset: -2px;
+}
+
+/* Unread item highlight */
+.notification-item--unread {
+  background: rgba(255, 56, 92, 0.04);
+}
+
+.notification-item--unread:hover {
+  background: rgba(255, 56, 92, 0.08);
+}
+
+/* ── Unread Dot ──────────────────────────────────────────────────────────── */
+.unread-dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary, #ff385c);
+  margin-top: 5px;
+}
+
+/* ── Item Content ────────────────────────────────────────────────────────── */
+.notification-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+}
+
+.notification-message {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text-primary, #1a1a1a);
+  word-break: break-word;
+}
+
+.notification-time {
+  font-size: 11px;
+  color: var(--text-secondary, #9ca3af);
+}
+
+/* ── Mobile ──────────────────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .notification-dropdown {
+    width: calc(100vw - 24px);
+    right: -8px;
+  }
+}
