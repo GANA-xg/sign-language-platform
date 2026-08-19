@@ -2,7 +2,7 @@ fastapi==0.139.0
 uvicorn==0.50.2
 python-multipart==0.0.32
 opencv-python==4.11.0.86
-mediapipe==0.10.21
+mediapipe==0.10.35
 numpy==1.26.4
 pandas==3.0.3
 scikit-learn==1.9.0
