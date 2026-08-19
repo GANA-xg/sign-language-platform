@@ -1,0 +1,13 @@
+Test_ID,Condition,Expected Result,Observed Result,Status,Remarks
+1,Normal Lighting,Correct Prediction,Correct Prediction,Pass,Stable recognition
+2,Bright Lighting,Correct Prediction,Correct Prediction,Pass,No noticeable accuracy drop
+3,Low Lighting,Correct Prediction,Correct Prediction,Pass,Slight landmark jitter but prediction correct
+4,White Background,Correct Prediction,Correct Prediction,Pass,Stable prediction
+5,Dark Background,Correct Prediction,Correct Prediction,Pass,Prediction remained accurate
+6,Busy Background,Correct Prediction,Correct Prediction,Pass,Minor landmark movement but correct prediction
+7,Near Distance,Correct Prediction,Correct Prediction,Pass,Stable detection
+8,Medium Distance,Correct Prediction,Correct Prediction,Pass,Stable detection
+9,Far Distance,Correct Prediction,Correct Prediction,Pass,Prediction remained accurate
+10,Different User 1,Correct Prediction,Correct Prediction,Pass,Generalized well
+11,Different User 2,Correct Prediction,Correct Prediction,Pass,Generalized well
+12,Different User 3,Correct Prediction,Correct Prediction,Pass,Generalized well
