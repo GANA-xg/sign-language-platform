@@ -225,7 +225,9 @@ export default function PracticeScreen({ go }: { go: (s: Screen) => void }) {
           ? "video/webm;codecs=vp8"
           : MediaRecorder.isTypeSupported("video/webm")
             ? "video/webm"
-            : "";
+            : MediaRecorder.isTypeSupported("video/mp4")
+              ? "video/mp4"
+              : "";
 
         const mr = new MediaRecorder(stream, mimeType ? { mimeType } : {});
         mediaRecorderRef.current = mr;
