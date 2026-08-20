@@ -144,3 +144,9 @@ export async function getDashboard() {
   }
   return aiRequest("/dashboard");
 }
+// Keep-alive ping to prevent cold starts
+export function startKeepAlive() {
+  const ping = () => fetch(`${AI_BASE_URL}/health`).catch(() => {});
+  ping(); // immediate
+  setInterval(ping, 10 * 60 * 1000); // every 10 min
+}
