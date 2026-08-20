@@ -40,6 +40,8 @@ app.add_middleware(
     "http://127.0.0.1:5173",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://ai-signlanguage-frontend.onrender.com",
+    "https://ai-signlanguage-business-logic.onrender.com",
     ],
 
     allow_credentials=True,
@@ -804,6 +806,8 @@ def dashboard():
 #         "http://127.0.0.1:5173",
 #         "http://localhost:3000",
 #         "http://127.0.0.1:3000",
+    "https://ai-signlanguage-frontend.onrender.com",
+    "https://ai-signlanguage-business-logic.onrender.com",
 #     ],
 #     allow_credentials=True,
 #     allow_methods=["*"],
